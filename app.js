@@ -31,7 +31,7 @@ pm2.Client.launchBus(function(err, bus) {
                 'timestamp': (log.at / 1000),
                 'short_message': log.data,
                 'level': 1,
-		'facility': 'some process'
+		'facility': log.process.name
             };
             gelf.emit('gelf.log', message);
         }
@@ -47,7 +47,7 @@ pm2.Client.launchBus(function(err, bus) {
                 'timestamp': (log.at / 1000),
                 'short_message': log.data,
                 'level': 3,
-		'facility': 'some process'
+		'facility': log.process.name
             };
             gelf.emit('gelf.log', message);
         }
