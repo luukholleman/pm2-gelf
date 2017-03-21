@@ -1,5 +1,5 @@
 {
-  "name": "pm2-gelf",
+  "name": "pm2-gelf-movin",
   "version": "0.0.1",
   "description": "PM2 Logging to GELF for GrayLog",
   "main": "app.js",
